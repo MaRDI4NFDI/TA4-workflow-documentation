@@ -1,0 +1,72 @@
+{
+    "properties": [
+        {
+            "label": "comment",
+            "description": "",
+            "datatype": "string"
+        },
+        {
+            "label": "field of work",
+            "description": "",
+            "datatype": "wikibase-item"
+        },
+        {
+            "label": "part number",
+            "description": "",
+            "datatype": "wikibase-item"
+        },
+        {
+            "label": "problem statement",
+            "description": "",
+            "datatype": "string"
+        }
+    ],
+    "items": [
+        {
+            "label": "Math reproducibility workflow",
+            "description": "",
+            "claims": {
+                "wdt:P31": "wd:Q115682347"
+            }
+        },
+        {
+            "label": "Runtime reproducibility workflow",
+            "description": "",
+            "claims": {
+                "wdt:P31": "wd:Q115682347"
+            }
+        },
+        {
+            "label": "Result reproducibility workflow",
+            "description": "",
+            "claims": {
+                "wdt:P31": "wd:Q115682347"
+            }
+        },
+        {
+            "label": "Original hardware/Experimental device workflow",
+            "description": "",
+            "claims": {
+                "wdt:P31": "wd:Q115682347"
+            }
+        },
+        {
+            "label": "Other hardware/Experimental device workflow",
+            "description": "",
+            "claims": {
+                "wdt:P31": "wd:Q115682347"
+            }
+        },
+        {
+            "label": "Transferable workflow",
+            "description": "",
+            "claims": {
+                "wdt:P31": "wd:Q115682347"
+            }
+        },
+        {
+            "label": "Process step",
+            "description": "",
+        }
+    ]
+}

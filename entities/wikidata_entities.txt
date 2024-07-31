@@ -1,0 +1,43 @@
+Q4913888     // binary data
+Q3966        // computer hardware
+Q17051824    // data publishing
+Q1172284     // data set
+Q1125955     // input
+Q1799072     // method
+Q309901      // open data
+Q778569      // output
+Q1413083     // parameter
+Q39546       // physical tool
+Q123684347   // proprietary information
+Q17155735    // research data archiving
+Q7397        // software
+Q110814494   // Streaming multiprocessor
+
+P880         // CPU
+P3575        // data size
+P1547        // depends on software
+P5106        // Dictionary of Algorithms and Data Structures ID
+P356         // DOI
+P393         // edition number
+P582         // end time
+P1195        // file extension
+P155         // follows
+P2671        // Google Knowledge Graph ID
+P2560        // GPU
+P527         // has part(s)
+P366         // has use
+P31          // instance of
+P276         // location
+P4424        // mandates
+P3285        // Mathematics Subject Classification ID
+P1141        // number of processor cores
+P400         // platform
+P277         // programmed in
+P1114        // quantity
+P2598        // serial number
+P348         // software version identifier
+P1324        // source code repository URL
+P2699        // URL
+P2078        // user manual URL
+P2283        // uses
+P12029       // WikiChip article ID
