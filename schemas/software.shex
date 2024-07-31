@@ -1,0 +1,20 @@
+PREFIX wdt: <https://portal.mardi4nfdi.de/prop/direct/>
+PREFIX wd: <https://portal.mardi4nfdi.de/entity/>
+PREFIX p: <https://portal.mardi4nfdi.de/prop/>
+PREFIX ps: <https://portal.mardi4nfdi.de/prop/statement/>
+PREFIX pq: <https://portal.mardi4nfdi.de/prop/qualifier/>
+
+start = @<software>
+
+<software> {
+    wdt:P31 [wd:Q56614];      # instance of: software
+    wdt:P342 @<software> *;   # depends on software
+    wdt:P114 . *;             # programmed in
+    wdt:P132 LITERAL +;       # software version ID
+    p:P132 { 
+        ps:P132 . ? ;
+        pq:P188 LITERAL ?     # DOI
+        pq:P340 LITERAL ?     # user manual URL
+        pq:P339 LITERAL ?     # source code repository URL
+    } + ;
+}

@@ -1,0 +1,23 @@
+PREFIX wdt: <https://portal.mardi4nfdi.de/prop/direct/>
+PREFIX wd: <https://portal.mardi4nfdi.de/entity/>
+PREFIX p: <https://portal.mardi4nfdi.de/prop/>
+PREFIX ps: <https://portal.mardi4nfdi.de/prop/statement/>
+PREFIX pq: <https://portal.mardi4nfdi.de/prop/qualifier/>
+
+start = @<data_set>
+
+<data_set> {
+    wdt:P31 [wd:Q56885]         # instance of: dataset
+    wdt:P31 [wd:Q6480276 wd:Q6480313 wd:Q6480370] ?; # instance of
+    wdt:P1563 [wd:Q6480291] ?   # mandates: data publishing
+    wdt:P1563 [wd:Q6480367] ?   # mandates: research data archiving
+    p:P1563 { 
+        ps:P1563 [wd:Q6480367] ? ;
+        pq:P411 xsd:dateTime ?       # end time
+    } ? ;
+    wdt:P1542 LITERAL ?;        # data size
+    wdt:P921 LITERAL ?;         # file extension
+    wdt:P1193 LITERAL ?;        # DADS ID
+    wdt:P27 LITERAL ?;          # DOI
+    wdt:P188 LITERAL ?;         # URL
+}

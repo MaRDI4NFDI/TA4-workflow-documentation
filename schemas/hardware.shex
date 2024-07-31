@@ -1,0 +1,38 @@
+PREFIX wdt: <https://portal.mardi4nfdi.de/prop/direct/>
+PREFIX wd: <https://portal.mardi4nfdi.de/entity/>
+PREFIX p: <https://portal.mardi4nfdi.de/prop/>
+PREFIX ps: <https://portal.mardi4nfdi.de/prop/statement/>
+PREFIX pq: <https://portal.mardi4nfdi.de/prop/qualifier/>
+
+start = @<hardware>
+
+<hardware> {
+    wdt:P31 [wd:Q56583]; # instance of: computer hardware
+    wdt:P1539 @<graphic_processor> * ; # GPU
+    p:P1539 { 
+        ps:P1539 . ? ;
+        pq:P149 LITERAL ?              # quantity
+    } + ;
+    wdt:P1540 @<central_processor> * ; # CPU
+    p:P1540 { 
+        ps:P1540 . ? ;
+        pq:P149 LITERAL ?              # quantity
+    } + ;
+}
+
+<graphic_processor> {
+    wdt:P31 [wd:Q56583];       # instance of: computer hardware
+    wdt:P545 LITERAL ?;        # Google Knowledge Graph ID
+    wdt:P265 [wd:Q6480373] * ; # has part(s): streaming multiprocessor
+    p:P265 { 
+        ps:P265 . ? ;
+        pq:P149 LITERAL ?      # quantity
+    } + ;
+}
+
+<central_processor> {
+    wdt:P31 [wd:Q56583];       # instance of: computer hardware
+    wdt:P545 LITERAL ?;        # Google Knowledge Graph ID
+    wdt:P1573 LITERAL ?;       # WikiChip article ID
+    wdt:P1565 LITERAL ?;       # number of processor cores
+}

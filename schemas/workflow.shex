@@ -1,0 +1,28 @@
+PREFIX wdt: <https://portal.mardi4nfdi.de/prop/direct/>
+PREFIX wd: <https://portal.mardi4nfdi.de/entity/>
+PREFIX p: <https://portal.mardi4nfdi.de/prop/>
+PREFIX ps: <https://portal.mardi4nfdi.de/prop/statement/>
+PREFIX pq: <https://portal.mardi4nfdi.de/prop/qualifier/>
+
+start = @<workflow>
+
+<workflow> {
+    wdt:P31 [ ... ];           # instance of
+    wdt:Pxx . ? ;              # problem statement
+    wdt:Pxx . * ;              # field of word
+    p:Pxx { 
+        ps:Pxx . ? ;
+        pq:P226 LITERAL ?               # MSC ID
+    } * ;
+    wdt:P557 @<math_model> +;           # uses 
+    wdt:P557 @<process_step> +;         # uses 
+    p:P557 { 
+        ps:P557 . ? ;
+        pq:P579 @<process_step> ?       # follows
+    } + ;
+    wdt:P557 @<applied_method> +;       # uses 
+    wdt:P557 @<software> +;             # uses 
+    wdt:P557 @<hardware> +;             # uses 
+    wdt:P557 @<experimental_device> +;  # uses 
+    wdt:P557 @<data_set> +;             # uses 
+}

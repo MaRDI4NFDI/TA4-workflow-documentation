@@ -1,0 +1,19 @@
+PREFIX wdt: <https://portal.mardi4nfdi.de/prop/direct/>
+PREFIX wd: <https://portal.mardi4nfdi.de/entity/>
+PREFIX p: <https://portal.mardi4nfdi.de/prop/>
+PREFIX ps: <https://portal.mardi4nfdi.de/prop/statement/>
+PREFIX pq: <https://portal.mardi4nfdi.de/prop/qualifier/>
+
+start = @<experimental_device>
+
+<experimental_device> {
+    wdt:P31 [wd:Q57127];        # instance of: physical tool
+    wdt:P131 LITERAL +;         # edition number
+    p:P131 { 
+        ps:P131 . ? ;
+        pq:P1570 LITERAL ? ;    # serial number
+        pq:Pxxx LITERAL ? ;     # part number
+        pq:P365 . ? ;           # location
+        pq:P557 @<software> * ; # uses
+    } + ;
+}

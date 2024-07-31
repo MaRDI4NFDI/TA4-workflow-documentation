@@ -1,0 +1,8 @@
+PREFIX wdt: <https://portal.mardi4nfdi.de/prop/direct/>
+PREFIX wd: <https://portal.mardi4nfdi.de/entity/>
+
+start = @<math_model>
+
+<math_model> {
+    wdt:P188 LITERAL + ;   # URL
+}

@@ -1,0 +1,13 @@
+PREFIX wdt: <https://portal.mardi4nfdi.de/prop/direct/>
+PREFIX wd: <https://portal.mardi4nfdi.de/entity/>
+
+start = @<applied_method>
+
+<applied_method> {
+    wdt:P31 [wd:Q68669];      # instance of: method
+    wdt:P557 @<parameter> * ; # uses
+}
+
+<parameter> {
+  wdt:P31 [wd:Q6480341];      # instance of: parameter
+}
