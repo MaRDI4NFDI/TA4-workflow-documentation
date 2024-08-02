@@ -9,9 +9,9 @@ start = @<workflow>
 <workflow> {
     wdt:P31 [ ... ];           # instance of
     wdt:Pxx . ? ;              # problem statement
-    wdt:Pxx . * ;              # field of word
-    p:Pxx { 
-        ps:Pxx . ? ;
+    wdt:P30 . * ;              # main subject
+    p:P30 { 
+        ps:P30 . ? ;
         pq:P226 LITERAL ?               # MSC ID
     } * ;
     wdt:P557 @<math_model> +;           # uses 

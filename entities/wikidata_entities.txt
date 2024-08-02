@@ -28,6 +28,7 @@ P527         // has part(s)
 P366         // has use
 P31          // instance of
 P276         // location
+P921         // main subject
 P4424        // mandates
 P3285        // Mathematics Subject Classification ID
 P1141        // number of processor cores

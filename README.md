@@ -29,6 +29,7 @@
 | P366        | P253      | has use |
 | P31         | P31       | instance of |
 | P276        | P365      | location |
+| P921        | P30       | main subject
 | P4424       | P1563     | mandates |
 | P3285       | P226      | Mathematics Subject Classification ID |
 | P1141       | P1565     | number of processor cores |

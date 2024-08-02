@@ -6,11 +6,6 @@
             "datatype": "string"
         },
         {
-            "label": "field of work",
-            "description": "",
-            "datatype": "wikibase-item"
-        },
-        {
             "label": "part number",
             "description": "",
             "datatype": "wikibase-item"
