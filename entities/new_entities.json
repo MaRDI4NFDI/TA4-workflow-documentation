@@ -7,61 +7,63 @@
         },
         {
             "label": "part number",
-            "description": "",
-            "datatype": "wikibase-item"
+            "description": "identifier of a particular part design of a device",
+            "datatype": "string"
         },
         {
             "label": "problem statement",
-            "description": "",
+            "description": "description of the issue or challenge that the workflow is designed to address",
             "datatype": "string"
         }
     ],
     "items": [
         {
-            "label": "Math reproducibility workflow",
-            "description": "",
+            "label": "Mathematically reproducible workflow",
+            "description": "workflow for which the mathematical results can be reproduced",
             "claims": {
                 "wdt:P31": "wd:Q115682347"
             }
         },
         {
-            "label": "Runtime reproducibility workflow",
-            "description": "",
+            "label": "Runtime reproducible workflow",
+            "description": "workflow for which the runtime can be reproduced",
             "claims": {
                 "wdt:P31": "wd:Q115682347"
             }
         },
         {
-            "label": "Result reproducibility workflow",
-            "description": "",
+            "label": "Result reproducible workflow",
+            "description": "workflow for which the result can be reproduced irrespective of mathematical deviations",
             "claims": {
                 "wdt:P31": "wd:Q115682347"
             }
         },
         {
-            "label": "Original hardware/Experimental device workflow",
-            "description": "",
+            "label": "Original device reproducible workflow",
+            "description": "workflow which can be reproduced on original hardware or experimental devices",
             "claims": {
                 "wdt:P31": "wd:Q115682347"
             }
         },
         {
-            "label": "Other hardware/Experimental device workflow",
-            "description": "",
+            "label": "Cross-device reproducible workflow",
+            "description": "workflow which can be reproduced on other hardware or experimental devices",
             "claims": {
                 "wdt:P31": "wd:Q115682347"
             }
         },
         {
             "label": "Transferable workflow",
-            "description": "",
+            "description": "workflow that can be transferred to other objectives, parameters, models, etc",
             "claims": {
                 "wdt:P31": "wd:Q115682347"
-            }
-        },
+            },
         {
             "label": "Process step",
-            "description": "",
+            "description": "a single action or stage within a longer process",
+            "claims": {
+                "wdt:P37": "wd:Q3249551"
+            }
         }
     ]
 }
