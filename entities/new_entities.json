@@ -57,7 +57,8 @@
             "description": "workflow that can be transferred to other objectives, parameters, models, etc",
             "claims": {
                 "wdt:P31": "wd:Q115682347"
-            },
+            }
+        },
         {
             "label": "Process step",
             "description": "a single action or stage within a longer process",
